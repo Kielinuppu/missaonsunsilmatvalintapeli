@@ -30,6 +30,7 @@ function startGame() {
     });
 }
 
+
 function getRandomQuestions(count) {
     const shuffled = [...questions];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -159,7 +160,7 @@ function restartGame() {
     
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = `
-        <h1>MISSÄ ON SUN SILMÄT?</h1>
+        <h2>VALITSE OIKEA KUVA:</h2>
         <div class="options">
             <img id="option1" class="option" onclick="selectOption(1)">
             <img id="option2" class="option" onclick="selectOption(2)">
